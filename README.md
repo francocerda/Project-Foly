@@ -21,7 +21,7 @@
 ## 🛠️ Tecnologías utilizadas:
 - **Node.js**: Para el entorno de ejecución de JavaScript del lado del servidor.
 - **Express.js**: Framework para manejar las rutas y las funcionalidades de la API.
-- **MongoDB** *(opcional)*: Para almacenar los productos, usuarios y pedidos (próximamente).
+- **PostgreSql**: Para almacenar los productos, usuarios y pedidos.
 - **Postman**: Herramienta para probar la API durante el desarrollo.
 
 ---
