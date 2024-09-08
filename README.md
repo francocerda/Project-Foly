@@ -25,15 +25,3 @@
 - **Postman**: Herramienta para probar la API durante el desarrollo.
 
 ---
-
-## 📑 Estructura del proyecto:
-```bash
-Foly/
-│
-├── /routes        # Define las rutas de la API (endpoints)
-│
-├── /controllers   # Contiene la lógica para cada una de las rutas
-│
-├── /models        # Modelos de datos si usamos una base de datos
-│
-└── server.js      # Archivo principal que arranca el servidor
