@@ -10,7 +10,6 @@ const app = express(); // Inicializa una aplicación de Express, es como el cent
 const productRoutes = require('./routes/products');// IMportamos los productos de la ruta escrita
 >>>>>>> Stashed changes
 
-app.use(express.json()); // Para que Express pueda manejar JSON en los cuerpos de las solicitudes
 app.use(express.json()); // Le decimos a la aplicacion que vamos a usar JSON para enviar y recibir datos
 
 <<<<<<< Updated upstream
@@ -21,6 +20,5 @@ app.use('/products', productRoutes); // Cualquier solicitud que comience con /pr
 >>>>>>> Stashed changes
 
 app.listen(3000, () => {
-  console.log('Servidor corriendo en http://localhost:3000');
   console.log('Servidor corriendo en http://localhost:3000');// Le digo al servidor que escuche en el puerto 3000
 });
