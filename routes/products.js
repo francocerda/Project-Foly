@@ -1,9 +1,10 @@
+
 const express = require('express');
-const router = express.Router();
-const pool = require('../config/db'); // Importa la conexión a PostgreSQL desde db.js
+const router = express.Router(); // Cuando llamemos a router, todas los rutas de productos se exportan al archivo de server.js
+const pool = require('../config/db'); // conexion especial de postgresql que permite hacer consultas a la base de datos
 
 // Obtener todos los productos
-router.get('/', async (req, res) => {
+router.get('/', async (req, res) => { // cuando el usuario haga una solicitud get a la ruta /products, se ejecutara esta funcion. 
   try {
     const result = await pool.query('SELECT * FROM products');
     res.json(result.rows); // Devolvemos todos los productos
