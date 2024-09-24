@@ -81,7 +81,7 @@ router.delete('/:id', async (req,res) => {
       'DELETE FROM users WHERE id = $1 RETURNING *', [id]
     );
     if (result.row.lenght == 0){
-      return res.status(404).json({error : 'Usuario no encontrado'})''
+      return res.status(404).json({error : 'Usuario no encontrado'});
     }
     res.json({message: 'Usuario eliminado con exito'});
     
@@ -121,9 +121,6 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Error al iniciar sesión' });
   }
 }); 
-
-
-
 
 
 
